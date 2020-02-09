@@ -11,9 +11,29 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
+<h1>SCP Stories</h1>
+
+<p>It was a dark and stormy night when ___ stepped out to go his car. There was an erie feeling in the air, one that felt almost of being watched. Naturally, ___ walked to his car to begin his trek to go to Shop Rite. Attempting to unlock his 2003 Honda Civic, he dropped his keys. When he reached down to grab them he heard a voice whisper his name. ___ looked around nervously but didn't see anyone there and thought it might just be in his head. So, he picked up the keys, unlocked the car and drove away. The wind was gusting as he drove down the dark, unlit back roads to get to Shop Rite but he still couldn't get that whisper out of his head.
+  </p>
 # Header 1
 ## Header 2
 ### Header 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - Bulleted
 - List
