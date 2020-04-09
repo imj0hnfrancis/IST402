@@ -16,58 +16,58 @@
 
   <meta name="theme-color" content="#fafafa">
   <p>INSCTRUCTIONS: <br /> In this exercise, you will be asked to extract the characters in the story and give them a name.
-  <br />You will also be asked to provide a brief description of the character, which should be roughly two sentences.</p>
+    <br />You will also be asked to provide a brief description of the character, which should be roughly two sentences.</p>
 </head>
 
 <body>
-  <div id="myData"></div>
-  <!-- Add your site or application content here -->
-  <p>mTurk Stories</p>
-  <script>
+<div id="myData"></div>
+<!-- Add your site or application content here -->
+<p>mTurk Stories</p>
+<script>
   fetch('story_02.json')
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    appendData(data);
-       })
-  .catch(function (err) {
-    console.log('error: ' + err);
-      });
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            appendData(data);
+          })
+          .catch(function (err) {
+            console.log('error: ' + err);
+          });
 
-function appendData(data) {
-  var mainContainer = document.getElementById("myData");
-  var div = document.createElement("div");
-  div.innerHTML = 'Title: ' + data.title + "<br />" + 'Link: ' +
-    "<a href='"+ data.link+"'target=\"_blank\"> Link to the Story </a>" + "<br />" +
-    " Text: " + data.text + "<br />" +
-    "";
-  mainContainer.appendChild(div);
-}
-;</script>
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  function appendData(data) {
+    var mainContainer = document.getElementById("myData");
+    var div = document.createElement("div");
+    div.innerHTML = 'Title: ' + data.title + "<br />" + 'Link: ' +
+            "<a href='"+ data.link+"'target=\"_blank\"> Link to the Story </a>" + "<br />" +
+            " Text: " + data.text + "<br />" +
+            "";
+    mainContainer.appendChild(div);
+  }
+  ;</script>
+<script src="js/vendor/modernizr-3.8.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-  
-  <p>Character Name<input type="text"></p>
-  <p>
-    <label>Character Description</label>
-    <textarea> </textarea>
-      </p>
-    
-  <form>
-    <p><input type="Submit"Value="Submit"</p> 
-    </form>
-  
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+<p>Character Name<input type="text"></p>
+<p>
+  <label>Character Description</label>
+  <textarea> </textarea>
+</p>
+
+<form>
+  <p><input type="Submit"Value="Submit"</p>
+</form>
+
 </body>
 
 </html>
